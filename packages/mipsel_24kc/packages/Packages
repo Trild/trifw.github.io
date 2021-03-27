@@ -1241,3 +1241,223 @@ SHA256sum: 6fc9572e8be18fe6b5f2ee44d9564573f95de376621b5dc5c822a9a9c2c795c1
 Description:  This package contains an utility useful to upgrade from other firmware or 
  older OpenWrt releases.
 
+
+Package: collectd-mod-cpu
+Version: 5.8.1-1
+Depends: libc, collectd
+Section: utils
+Architecture: mipsel_24kc
+Installed-Size: 4598
+Filename: collectd-mod-cpu_5.8.1-1_mipsel_24kc.ipk
+Size: 5310
+SHA256sum: d8baa6699a2bd6c5d961c491b57e471e4509bc064b2bfed249a9f9f05e5b244c
+Description:  CPU input plugin
+
+Package: collectd-mod-interface
+Version: 5.8.1-1
+Depends: libc, collectd
+Section: utils
+Architecture: mipsel_24kc
+Installed-Size: 3521
+Filename: collectd-mod-interface_5.8.1-1_mipsel_24kc.ipk
+Size: 4252
+SHA256sum: 1c5b2f07075a31ffa1b04114cf366c8adb25beb3b87528d22666910c3f650efc
+Description:  network interfaces input plugin
+
+Package: collectd-mod-iwinfo
+Version: 5.8.1-1
+Depends: libc, collectd, libiwinfo
+Section: utils
+Architecture: mipsel_24kc
+Installed-Size: 3607
+Filename: collectd-mod-iwinfo_5.8.1-1_mipsel_24kc.ipk
+Size: 4344
+SHA256sum: 4f68a4dc6a9b4f33c5a2a0a13021ee9cc6eefc76399cf658f37bbcaf952a0a75
+Description:  libiwinfo wireless statistics plugin
+
+Package: collectd-mod-load
+Version: 5.8.1-1
+Depends: libc, collectd
+Section: utils
+Architecture: mipsel_24kc
+Installed-Size: 2078
+Filename: collectd-mod-load_5.8.1-1_mipsel_24kc.ipk
+Size: 2834
+SHA256sum: a0d5b754e4b5ef8be14cd77f3bdcad637de682805836791666181ddeee7472f6
+Description:  system load input plugin
+
+Package: collectd-mod-memory
+Version: 5.8.1-1
+Depends: libc, collectd
+Section: utils
+Architecture: mipsel_24kc
+Installed-Size: 2786
+Filename: collectd-mod-memory_5.8.1-1_mipsel_24kc.ipk
+Size: 3528
+SHA256sum: ddc066204843f11bf0a4f134a04f96fbbf4cf7a89dc494cf3598be1982777b49
+Description:  physical memory usage input plugin
+
+Package: collectd-mod-network
+Version: 5.8.1-1
+Depends: libc, collectd
+Section: utils
+Architecture: mipsel_24kc
+Installed-Size: 14781
+Filename: collectd-mod-network_5.8.1-1_mipsel_24kc.ipk
+Size: 15490
+SHA256sum: 210a0deec5b4fa3a1c539a8ca79cc9300a7004e6575e2208431ac1bbdc034d95
+Description:  network input/output plugin
+
+Package: collectd-mod-rrdtool
+Version: 5.8.1-1
+Depends: libc, collectd, librrd1
+Section: utils
+Architecture: mipsel_24kc
+Installed-Size: 11795
+Filename: collectd-mod-rrdtool_5.8.1-1_mipsel_24kc.ipk
+Size: 12567
+SHA256sum: 54d46145e6baee339187747b9200dba986b3ad868929e77ce63d9bb68255c99f
+Description:  RRDtool output plugin
+
+Package: collectd
+Version: 5.8.1-1
+Depends: libc, libpthread, zlib, libltdl, libip4tc
+Section: utils
+Architecture: mipsel_24kc
+Installed-Size: 84455
+Filename: collectd_5.8.1-1_mipsel_24kc.ipk
+Size: 85314
+SHA256sum: 7bc6f48a42e2fc0547fd34e3d5c95854235c487dbe1d85f58d00175cf35f05ac
+Description:  collectd is a small daemon which collects system information periodically
+ and provides mechanismns to store the values in a variety of ways.
+
+Package: jansson
+Version: 2.10-1
+Depends: libc
+License: MIT
+Section: libs
+Architecture: mipsel_24kc
+Installed-Size: 17769
+Filename: jansson_2.10-1_mipsel_24kc.ipk
+Size: 18538
+SHA256sum: b8b2ecfd2e6da5728b718287a0a640f19690209d59d5620a9915ac4dbb2865c7
+Description:  Jansson is a C library for encoding, decoding and manipulating JSON data
+
+Package: libattr
+Version: 20170915-1
+Depends: libc
+License: LGPL-2.1 GPL-2.0
+Section: libs
+Architecture: mipsel_24kc
+Installed-Size: 5869
+Filename: libattr_20170915-1_mipsel_24kc.ipk
+Size: 6640
+SHA256sum: 7b393012588b95ccd06778302ef215d65d82b63d111a9743a87e0d8fcc6a67ff
+Description:  Extended attributes support
+ This package provides libattr
+
+Package: librrd1
+Version: 1.0.50-2
+Depends: libc, zlib
+Section: libs
+Architecture: mipsel_24kc
+Installed-Size: 129196
+Filename: librrd1_1.0.50-2_mipsel_24kc.ipk
+Size: 130178
+SHA256sum: fc9fb1d167149d1bf9c0fdfb0a1a6405f496e26f1472c3ad05e125528fe15c2b
+Description:  RRD is the Acronym for Round Robin Database. RRD is a system to store and
+ display time-series data (i.e. network bandwidth, machine-room temperature,
+ server load average). It stores the data in a very compact way that will
+ not expand over time, and it presents useful graphs by processing the data
+ to enforce a certain data density. It can be used either via simple wrapper
+ scripts (from shell or Perl) or via frontends that poll network devices and
+ put friendly user interface on it.
+ 
+ This is version 1.0.x with cgilib-0.4, gd1.3 and libpng-1.0.9 linked into
+ librrd.so. The library is much smaller compared to the 1.2.x version with
+ separate dynamic linked libraries.
+ This package contains a shared library, used by other programs.
+
+Package: ntfs-3g
+Version: 2017.3.23-1-fuseint
+Depends: libc, kmod-fuse, libpthread
+License: GPL-2.0 LGPL-2.0
+Section: utils
+Architecture: mipsel_24kc
+Installed-Size: 189200
+Filename: ntfs-3g_2017.3.23-1-fuseint_mipsel_24kc.ipk
+Size: 190324
+SHA256sum: 1a8a0f339be22a237182b40866039e98e013f8cc4de292cca6dec3ea0e326b96
+Description:  Ntfs-3g is a NTFS driver, which can create, remove, rename,
+ move files, directories, hard links, and streams. It can read
+ and write files, including streams and sparse files. It can
+ handle special files like symbolic links, devices, and FIFOs.
+ Moreover it can also read transparently compressed files.
+ 
+ Contains:
+ - ntfs-3g
+ - ntfs-3g.probe
+ - mount.ntfs-3g (symlink to ntfs-3g)
+ 
+
+Package: openssh-sftp-server
+Version: 7.7p1-1
+Depends: libc
+License: BSD ISC
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 36071
+Filename: openssh-sftp-server_7.7p1-1_mipsel_24kc.ipk
+Size: 36820
+SHA256sum: d1d4496e526ec645e8ff7485ee40067660a959a43f6900cf75b53fee7c3629b3
+Description:  OpenSSH SFTP server.
+
+Package: pppossh
+Version: 2
+Depends: libc, ppp, resolveip
+License: GPLv2
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 976
+Filename: pppossh_2_mipsel_24kc.ipk
+Size: 1767
+SHA256sum: 9427ed6a95d3b1b542efc2a387be61b23871c2902bdf114f640f23d11f6cd9f0
+Description:  This package adds protocol support for PPP over SSH.  The protocol name is
+ 'pppossh' as in netifd interface config option 'proto'.
+
+Package: rrdtool1
+Version: 1.0.50-2
+Depends: libc, librrd1
+Section: utils
+Architecture: mipsel_24kc
+Installed-Size: 10644
+Filename: rrdtool1_1.0.50-2_mipsel_24kc.ipk
+Size: 11790
+SHA256sum: 05a5fd9cd8547b67b714042b2c417b60ddf3442a43fb5b0a67cbc195061b9903
+Description:  RRD is the Acronym for Round Robin Database. RRD is a system to store and
+ display time-series data (i.e. network bandwidth, machine-room temperature,
+ server load average). It stores the data in a very compact way that will
+ not expand over time, and it presents useful graphs by processing the data
+ to enforce a certain data density. It can be used either via simple wrapper
+ scripts (from shell or Perl) or via frontends that poll network devices and
+ put friendly user interface on it.
+ 
+ This is version 1.0.x with cgilib-0.4, gd1.3 and libpng-1.0.9 linked into
+ librrd.so. The library is much smaller compared to the 1.2.x version with
+ separate dynamic linked libraries.
+ This package contains command line tools used to manage RRDs.
+
+Package: xl2tpd
+Version: 1.3.12-1
+Depends: libc, ppp-mod-pppol2tp, resolveip
+License: GPL-2.0
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 42652
+Filename: xl2tpd_1.3.12-1_mipsel_24kc.ipk
+Size: 43648
+SHA256sum: a2a09f075229c3fa4fa324c865bab0269e1466c79b31692042909f5493607ff7
+Description:  l2tpd is the open source implementation of the L2TP tunneling protocol (RFC2661).
+ It does implement both LAC and LNS role in a L2TP networking architecture. The
+ main goal of this protocol is to tunnel PPP frame trough an IP network.
+
