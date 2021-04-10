@@ -781,6 +781,24 @@ Size: 6970
 SHA256sum: 988cda665610b860450a7ac1c83819277b7c11cffa68bc82b008a049e1c4f8d4
 Description:  Realtek SoC GPIO MUX configuration utility
 
+Package: samba36-server
+Version: 3.6.25-12
+Depends: libc
+Source: package/network/services/samba36
+License: GPL-3.0
+LicenseFiles: COPYING
+Section: net
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mipsel_24kc
+Installed-Size: 795817
+Filename: samba36-server_3.6.25-12_mipsel_24kc.ipk
+Size: 781870
+SHA256sum: b2199e31c6c541d13e2c141cb8010ab1812d69a2b3fe2d177bc098ee12b53fe8
+Description:  The Samba software suite is a collection of programs that implements the
+ SMB protocol for UNIX systems, allowing you to serve files and printers to
+ Windows, NT, OS/2 and DOS clients. This protocol is sometimes also referred
+ to as the LanManager or Netbios protocol.
+
 Package: swconfig
 Version: 11
 Depends: libc, libuci, libnl-tiny

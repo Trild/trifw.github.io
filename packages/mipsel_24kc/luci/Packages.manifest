@@ -54,6 +54,19 @@ Size: 2118
 SHA256sum: 47ca66f56ba901e2fbe2c1501d2da8dfe3c69abad1c9b61cfca6801997cf5c1b
 Description:  Quality of Service configuration module
 
+Package: luci-app-samba
+Version: git-20.172.53202-dac8a2a-1
+Depends: libc, samba36-server
+Source: feeds/luci/applications/luci-app-samba
+Section: luci
+Architecture: all
+Installed-Size: 1459
+Filename: luci-app-samba_git-20.172.53202-dac8a2a-1_all.ipk
+Size: 2193
+SHA256sum: 150d8f98cffb6d43469c7c78c95ba56b2a2b366fad134866308e677bb17067bd
+Description:  Network Shares - Samba SMB/CIFS module
+
+
 Package: luci-app-statistics
 Version: git-20.172.53202-dac8a2a-1
 Depends: libc, collectd, rrdtool1, collectd-mod-rrdtool, collectd-mod-iwinfo, collectd-mod-cpu, collectd-mod-memory, collectd-mod-interface, collectd-mod-load, collectd-mod-network
@@ -65,6 +78,18 @@ Filename: luci-app-statistics_git-20.172.53202-dac8a2a-1_all.ipk
 Size: 30673
 SHA256sum: 2ff7ba58822b8cc14c1ce6c41f8348a9bad513d0a200c61f12aa23b1d4258d99
 Description:  LuCI Statistics Application
+
+Package: luci-app-transmission
+Version: git-20.172.53202-dac8a2a-1
+Depends: libc
+Source: feeds/luci/applications/luci-app-transmission
+Section: luci
+Architecture: all
+Installed-Size: 3396
+Filename: luci-app-transmission_git-20.172.53202-dac8a2a-1_all.ipk
+Size: 4141
+SHA256sum: 4fef6b7d791e1822d91d2c689f1a67a39c9d616eec3cab6ddc8b0069a979cba4
+Description:  LuCI Support for Transmission
 
 Package: luci-base
 Version: git-20.172.53202-dac8a2a-1
